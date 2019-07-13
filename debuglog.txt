@@ -1,0 +1,2 @@
+starting application
+logging to the application.
