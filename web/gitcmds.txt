@@ -1,0 +1,63 @@
+git init- initialize the repository in the current folder (creates a .git folder)
+git status- to track any untracked files
+git add filename- staging the file for commit
+everytime we make any changes we have to -git add filename to stage the new changes.
+ 
+after that we have to -
+-git commit --to commit
+ then enter commit message.
+press I and type insert message or commit message
+and hit esc to exit
+and type - :wq - rewrite the current file and exit
+
+alternatively, git commit -m ' message '
+
+-git log - to see list of commit( author date and commit notes)
+- git add .( stage them all files added file and modified files)
+- git add *.html ( will stage only files with .html extension)
+- touch .gitignore to create a gitignore file to exclude certain files for git
+- and write *.log in the .gitignore file to ignore all log files.
+- now .log files will not show up git status 
+ but we have to -git add . -to add .gitignore file
+
+-branching to work on the copy of the code without affecting the main line directly.
+- git branch branchName - to create the new branch
+- git checkout branchName- to switch to the new branch
+- touch filename.fileext - to add the new file 
+we have to be in the destination branch to merge the the newbranch
+- git merge nameofsourcebranch
+
+- merge master into new branch - we will face the merge confilct
+- use git status to see the conflict.
+- delete <<<<<<HEAD
+- delete>>>>>>> master
+
+and then git commit
+git mergetool
+
+git stash 
+git stash apply
+
+git remote
+
+git remote -v will show url for fetch and push
+
+git fetch origin- go out to the server and get any changes made since you last cloned or fetched
+
+fetching will pull the data in your local repository but will not merge into the work. need to merge manually.
+
+git pull origin will fetch and merge from remote into the current branch.
+
+git commit -a -m 'message'
+
+finally 
+git push origin master
+
+
+
+
+
+
+
+
+
